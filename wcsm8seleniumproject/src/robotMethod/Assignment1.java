@@ -4,7 +4,6 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,21 +17,44 @@ public class Assignment1 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		driver.get("https://www.bluestone.com/");
+		Thread.sleep(2000);
+		driver.findElement(By.id("denyBtn")).click();
 
-		driver.findElement(By.xpath("//a[text()='Watch Jewellery ']")).click();
+		WebElement tar = driver.findElement(By.xpath("//a[text()='Watch Jewellery ']"));
+
+		Actions act = new Actions(driver);
+		act.moveToElement(tar).build().perform();
+
+		driver.findElement(By.xpath("//a[text()='Band']")).click();
 
 		WebElement target = driver.findElement(By.xpath("//div[text()='Filter by']"));
-		Actions act = new Actions(driver);
 
-		act.doubleClick(target).perform();
+		Thread.sleep(2000);
+		
+		for (int i = 0; i <= 2; i++) {
+			act.clickAndHold(target).perform();
+		}
 
 		Robot robot = new Robot();
-		robot.keyPress(KeyEvent.VK_SHIFT);
-		robot.keyPress(KeyEvent.VK_KP_RIGHT);
-		robot.keyPress(KeyEvent.VK_KP_RIGHT);
-		robot.keyRelease(KeyEvent.VK_SHIFT);
-		robot.keyRelease(KeyEvent.VK_KP_RIGHT);
-		robot.keyRelease(KeyEvent.VK_KP_RIGHT);
+
+		robot.keyPress(KeyEvent.VK_CONTROL);//vk stand for virtual key
+		robot.keyPress(KeyEvent.VK_C);
+		Thread.sleep(2000);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_C);
+
+		WebElement target1 = driver.findElement(By.name("search_query"));
+		target1.click();
+
+		robot.keyPress(KeyEvent.VK_CONTROL);//keyEvent is a class
+		robot.keyPress(KeyEvent.VK_V);
+		Thread.sleep(2000);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_V);
+
+		driver.findElement(By.name("submit_search"));
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
 
 	}
 }
