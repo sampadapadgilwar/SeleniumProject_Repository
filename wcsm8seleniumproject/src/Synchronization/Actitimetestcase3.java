@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Actitimetestcase3 {
 
-	public static Boolean waitmethod(WebDriver driver, int sec, String title) {
+	public static boolean waitmethod(WebDriver driver, int sec, String title) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(sec));
-		Boolean titleofpage = wait.until(ExpectedConditions.titleContains(title));
+		boolean titleofpage = wait.until(ExpectedConditions.titleContains(title));
 		return titleofpage;
 	}
 

@@ -1,8 +1,8 @@
-package keywordDrivenPackage;
+package pageObjectModel;
 
-public interface KeyInterface {
+public interface IAutoConstant {
 
-	String EXCEL_PATH = "./data/ActiTimeTestData.xlsx";
+	String EXCEL_PATH = "./data/ActiTimeExcelSheet.xlsx";
 	String PROP_PATH = "./data/config.properties";
 
 	String CHROME_KEY = "webdriver.chrome.driver";

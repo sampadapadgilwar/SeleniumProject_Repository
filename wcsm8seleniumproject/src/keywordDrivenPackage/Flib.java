@@ -53,7 +53,7 @@ public class Flib {
 		prop.load(fis);
 		String data = prop.getProperty(key);
 		return data;
-	
+
 	}
 
 }
