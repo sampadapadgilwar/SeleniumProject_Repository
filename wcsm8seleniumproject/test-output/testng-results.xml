@@ -1,81 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="12" total="18" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[STC1 is executed!!]]>
+      <![CDATA[login performed!!]]>
     </line>
     <line>
-      <![CDATA[STC2 is executed!!]]>
+      <![CDATA[user created!!]]>
     </line>
     <line>
-      <![CDATA[STC3 is executed!!]]>
-    </line>
-    <line>
-      <![CDATA[STC4 is executed!!]]>
-    </line>
-    <line>
-      <![CDATA[STC5 is executed!!]]>
-    </line>
-    <line>
-      <![CDATA[STC6 is executed!!]]>
+      <![CDATA[logout successfully!!]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-25T12:36:50 IST" name="Suite" finished-at="2023-05-25T12:36:50 IST" duration-ms="212">
+  <suite started-at="2023-05-26T10:56:08 IST" name="Default suite" finished-at="2023-05-26T10:56:08 IST" duration-ms="98">
     <groups>
-      <group name="SMOKE">
-        <method signature="GroupExecution.st1()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" name="st1" class="testNGGroupExe.GroupExecution"/>
-        <method signature="GroupExecution.st2()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" name="st2" class="testNGGroupExe.GroupExecution"/>
-        <method signature="GroupExecution.st3()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" name="st3" class="testNGGroupExe.GroupExecution"/>
-        <method signature="GroupExecution.st4()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" name="st4" class="testNGGroupExe.GroupExecution"/>
-        <method signature="GroupExecution.st5()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" name="st5" class="testNGGroupExe.GroupExecution"/>
-        <method signature="GroupExecution.st6()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" name="st6" class="testNGGroupExe.GroupExecution"/>
-      </group> <!-- SMOKE -->
     </groups>
-    <test started-at="2023-05-25T12:36:50 IST" name="Test" finished-at="2023-05-25T12:36:50 IST" duration-ms="212">
-      <class name="testNGGroupExe.GroupExecution">
-        <test-method signature="st1()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" started-at="2023-05-25T12:36:50 IST" name="st1" finished-at="2023-05-25T12:36:50 IST" duration-ms="32" status="PASS">
+    <test started-at="2023-05-26T10:56:08 IST" name="Default test" finished-at="2023-05-26T10:56:08 IST" duration-ms="98">
+      <class name="testNGFlags.Flag5">
+        <test-method signature="loginMethod()[pri:0, instance:testNGFlags.Flag5@78e117e3]" started-at="2023-05-26T10:56:08 IST" name="loginMethod" description="login TestCase" finished-at="2023-05-26T10:56:08 IST" duration-ms="16" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[STC1 is executed!!]]>
+              <![CDATA[login performed!!]]>
             </line>
           </reporter-output>
-        </test-method> <!-- st1 -->
-        <test-method signature="st2()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" started-at="2023-05-25T12:36:50 IST" name="st2" finished-at="2023-05-25T12:36:50 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- loginMethod -->
+        <test-method signature="createUserMethod()[pri:0, instance:testNGFlags.Flag5@78e117e3]" started-at="2023-05-26T10:56:08 IST" name="createUserMethod" description="create user TestCase" finished-at="2023-05-26T10:56:08 IST" depends-on-methods="testNGFlags.Flag5.loginMethod" duration-ms="2" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[STC2 is executed!!]]>
+              <![CDATA[user created!!]]>
             </line>
           </reporter-output>
-        </test-method> <!-- st2 -->
-        <test-method signature="st3()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" started-at="2023-05-25T12:36:50 IST" name="st3" finished-at="2023-05-25T12:36:50 IST" duration-ms="19" status="PASS">
+        </test-method> <!-- createUserMethod -->
+        <test-method signature="logoutMethod()[pri:0, instance:testNGFlags.Flag5@78e117e3]" started-at="2023-05-26T10:56:08 IST" name="logoutMethod" description="logout Testcase" finished-at="2023-05-26T10:56:08 IST" depends-on-methods="testNGFlags.Flag5.createUserMethod" duration-ms="3" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[STC3 is executed!!]]>
+              <![CDATA[logout successfully!!]]>
             </line>
           </reporter-output>
-        </test-method> <!-- st3 -->
-        <test-method signature="st4()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" started-at="2023-05-25T12:36:50 IST" name="st4" finished-at="2023-05-25T12:36:50 IST" duration-ms="7" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[STC4 is executed!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- st4 -->
-        <test-method signature="st5()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" started-at="2023-05-25T12:36:50 IST" name="st5" finished-at="2023-05-25T12:36:50 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[STC5 is executed!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- st5 -->
-        <test-method signature="st6()[pri:0, instance:testNGGroupExe.GroupExecution@2473d930]" started-at="2023-05-25T12:36:50 IST" name="st6" finished-at="2023-05-25T12:36:50 IST" duration-ms="9" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[STC6 is executed!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- st6 -->
-      </class> <!-- testNGGroupExe.GroupExecution -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- logoutMethod -->
+      </class> <!-- testNGFlags.Flag5 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
