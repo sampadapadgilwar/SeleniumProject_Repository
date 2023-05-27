@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGExecution1.SelectBrowser">
+      <class name="testNGDataProvider.DProvider">
         <methods>
-          <include name="method1"/>
+          <include name="myTest" invocation-numbers="1"/>
         </methods>
-      </class> <!-- testNGExecution1.SelectBrowser -->
+      </class> <!-- testNGDataProvider.DProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
