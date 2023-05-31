@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGDataProvider.DProvider">
+      <class name="testNGDataProvider.ActiTimeDataProvider1">
         <methods>
-          <include name="myTest" invocation-numbers="1"/>
+          <include name="tearDown"/>
+          <include name="property"/>
+          <include name="setUp"/>
+          <include name="loginvalid" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- testNGDataProvider.DProvider -->
+      </class> <!-- testNGDataProvider.ActiTimeDataProvider1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
