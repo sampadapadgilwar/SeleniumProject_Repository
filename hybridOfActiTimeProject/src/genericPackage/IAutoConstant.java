@@ -14,5 +14,5 @@ public interface IAutoConstant {
 	String EDGE_PATH = "./drivers/msedgedriver.exe";
 	
 	String SCREENSHOT_PATH="./screenshots/";
-
+	//String PROP_PATH1="./data/config1.properties";
 }

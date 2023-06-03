@@ -2,6 +2,7 @@ package genericPackage;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 public class WorkLib extends BaseTest
 {
@@ -56,4 +57,11 @@ public class WorkLib extends BaseTest
 	{
 		driver.switchTo().frame(target);
 	}
+	// handle DropDown Methods
+	
+		public void dropDownSelect(WebElement element, int index)
+		{
+		   Select sel = new Select(element);
+		   sel.selectByIndex(index);
+		}
 }
