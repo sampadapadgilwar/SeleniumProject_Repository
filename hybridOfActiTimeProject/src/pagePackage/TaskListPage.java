@@ -116,6 +116,7 @@ public class TaskListPage {
 		projectNameTB.sendKeys(proName);
 		Thread.sleep(2000);
 		createProjectButton.click();
+
 	}
 
 }
